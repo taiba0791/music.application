@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'info_page.dart';
+
 class LanguageCardsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -94,6 +96,9 @@ class _LanguageGridScreenState extends State<LanguageGridScreen> {
               child: ElevatedButton(
                 onPressed: selectedLanguages.isNotEmpty
                     ? () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (_) => UserInfoApp()),
+                  );
                   // Implement the action for the "Next" button here.
                   print('Selected Languages: $selectedLanguages');
                 }

@@ -1,4 +1,5 @@
 import 'package:authentication/firebase_options.dart';
+import 'package:authentication/screens/homescreen.dart';
 import 'package:authentication/screens/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: GradientBackground(
-        child: Login(),
+        child: ArtistCardsApp(),
       ),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'laguagepage.dart';
+
 class ArtistCardsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -94,6 +96,9 @@ class _ArtistGridScreenState extends State<ArtistGridScreen> {
               onPressed: selectedArtists.length >= 5
                   ? () {
                 // Implement the action for the "Next" button here.
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (_) => LanguageCardsApp()),
+                );
                 print('Selected Artists: $selectedArtists');
               }
                   : null,

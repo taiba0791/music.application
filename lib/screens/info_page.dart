@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // For formatting the Date of Birth
+import 'package:intl/intl.dart';
+
+import 'actualmainpage.dart'; // For formatting the Date of Birth
 
 class UserInfoApp extends StatelessWidget {
   @override
@@ -193,6 +195,9 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                   onPressed: termsAccepted ? () {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (_) => SpotifyHomeScreen()),
+                      );
                       print('User Info: $username, $gender, $dateOfBirth');
                     }
                   } : null,

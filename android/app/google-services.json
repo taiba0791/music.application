@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750930693186",
+    "project_id": "musicapplication-b265a",
+    "storage_bucket": "musicapplication-b265a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750930693186:android:592af32c8544839ab2b1db",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnrbiXp808RlH7ystHTYHOSOWy1WxLmQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
